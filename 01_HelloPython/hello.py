@@ -114,5 +114,5 @@ def f(x):
         return 23
     else:
         return
-arg = float(input('x = '))
+arg = int(input('x = '))
 print (f(arg))
