@@ -35,9 +35,21 @@
 
 
 #ТРЕТЬЕ РЕШЕНИЕ
-numbers = []
-for i in range(1,6):
-    numbers.append(int(input(f'Введите элемент под номером {i}: ')))
-    # append добавляет данные в конец массива
-print(numbers)
-print(max(numbers))
+# numbers = []
+# for i in range(1,6):
+#     numbers.append(int(input(f'Введите элемент под номером {i}: ')))
+#     # append добавляет данные в конец массива
+# print(numbers)
+# print(max(numbers))
+
+my_max = 0
+for _ in range(5):
+    num = int(input('Введите число:'))
+    if my_max < num:
+        my_max = num
+print(my_max)
+
+# range(5) -> range(start=0, stop=5, step=1):
+# range(1,5) -> range(start=1, stop=5, step=1)
+# range(1,9,2) -> range(start=1, stop=9, step=2)
+# range(9,1,-1) -> range(start=9, stop=1, step=-1)
