@@ -6,12 +6,12 @@ coordinate2 = int(input('Введите координату Y: '))
 
 if coordinate1 > 0:
     if coordinate2 > 0:
-        print(f'x = {coordinate1}; y = {coordinate2} -> 1')
+        print(f'x = {coordinate1}; y = {coordinate2} -> 1 четверть')
     else:
-        print(f'x = {coordinate1}; y = {coordinate2} -> 4')
+        print(f'x = {coordinate1}; y = {coordinate2} -> 4 четверть')
 else:
     if coordinate2 > 0:
-        print(f'x = {coordinate1}; y = {coordinate2} -> 2')
+        print(f'x = {coordinate1}; y = {coordinate2} -> 2 четверть')
     else:
-        print(f'x = {coordinate1}; y = {coordinate2} -> 3')
+        print(f'x = {coordinate1}; y = {coordinate2} -> 3 четверть')
 

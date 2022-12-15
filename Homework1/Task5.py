@@ -6,5 +6,5 @@ coordinate2 = int(input('Введите координату Y первой то
 coordinate3 = int(input('Введите координату Х второй точки: '))
 coordinate4 = int(input('Введите координату Y второй точки: '))
 
-result = math.sqrt((coordinate1 - coordinate3) ** 2 + (coordinate2 - coordinate4) ** 2)
+result = ((coordinate1 - coordinate3) ** 2 + (coordinate2 - coordinate4) ** 2)**0.5
 print(round(result, 3))

@@ -8,10 +8,10 @@ while quarter not in  ('1', '2', '3', '4') and quarter != 'exit':
 if quarter.isdigit():
     quarter = int(quarter)
     if quarter == 1:
-        print(f'{quarter} -> x > 0 ; y > 0')
+        print(f'{quarter} четверть -> X > 0; Y > 0')
     elif quarter == 2:
-        print(f'{quarter} -> x < 0 ; y > 0')
+        print(f'{quarter} четверть -> X < 0; Y > 0')
     elif quarter == 3:
-        print(f'{quarter} -> x < 0 ; y < 0')
+        print(f'{quarter} четверть -> X < 0; Y < 0')
     else:
-        print(f'{quarter} -> x > 0 ; y < 0')
+        print(f'{quarter} четверть -> X > 0; Y < 0')
