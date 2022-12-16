@@ -37,7 +37,7 @@ a.rstrip() - удаляет справа
 Такой код:
 s = 'Python'
 
-print(*s)
+print(*s) # -> print('P', 'y', 't', 'h', 'o', 'n')
 print()
 print(*s, sep='\n')
 
@@ -66,5 +66,12 @@ Z-90
 
 name = "John"
 print('Hi, %s.' % name, end=" ")  - Hi, John
-print('Hi, {name}.', end=" ")  - Hi, {name}
+print('Hi, {name}'.format(name), end=" ")  - Hi, {name}
 print(f'Hi, {name}.')  - Hi, John.
+
+number = int(input('Enter your number: '))
+
+if (number % 5 == 0 and number % 10 == 0 or number % 15 == 0) and number % 30 != 0:
+    print('Your number is nice!')
+else:
+    print('Try again')
