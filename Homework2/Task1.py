@@ -3,11 +3,19 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-def split(s):
+def split(s):                         # функция делит строку на символы
     return [char for char in s]
 
 numbers_user = input('Введите число: ')
 my_list = split(numbers_user)
-my_list.remove(',') 
-sum = sum(map(int, my_list))
+for i in my_list:                     # удаляем (-, ., ,) из массива, если они есть
+    if ',' in my_list:
+        my_list.remove(',')
+    elif '.' in my_list:
+        my_list.remove('.')
+    elif '-' in my_list:
+        my_list.remove('-') 
+    else:
+        break
+sum = sum(map(int, my_list))          # преобразует каждый элемент списка в целое число и суммирует
 print(sum)

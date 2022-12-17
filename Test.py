@@ -33,12 +33,22 @@
 # else:
 #     print('Утверждение ложно')
 
+# with open('file.txt', 'w') as data:
+#     data.write('line1\n')
+#     data.write('line2\n')
 
-x = 3 
-y = 4 
-z = x + y 
-z = z + 1 
-x = y 
-y = 5
-x = z + y + 7
-print(x)
+import readline
+position_num = 3
+path = 'file.txt'   # чтение данных из файла
+my_list = []
+with True:
+    i = path.readline()
+    if not i:
+        break
+    print(i)
+   
+# content = path.read
+# element_num = content(position_num)
+# data = open(path, 'r')
+# element_num = int(position_num)
+# print(element_num)
