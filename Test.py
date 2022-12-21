@@ -72,28 +72,28 @@
 # element_num = int(position_num)
 # print(element_num)
 
-def converting_list(num1):
-    i_list = []
-    while num1 != 0:
-        b = int(num1%10)
-        i_list.append(b)
-        num1 = int(num1 / 10)
-    else:
-        return i_list
+# def converting_list(num1):
+#     i_list = []
+#     while num1 != 0:
+#         b = int(num1%10)
+#         i_list.append(b)
+#         num1 = int(num1 / 10)
+#     else:
+#         return i_list
 
 
-x = float(input())
-count = 0
-while x%1 != 0:
-    x = x * 10
-    count += 1
-else:
-    my_list = []
-    while x != 0:
-        b = int(x%10)
-        my_list.append(b)
-        x = int(x / 10)
-print(sum(my_list))
+# x = float(input())
+# count = 0
+# while x%1 != 0:
+#     x = x * 10
+#     count += 1
+# else:
+#     my_list = []
+#     while x != 0:
+#         b = int(x%10)
+#         my_list.append(b)
+#         x = int(x / 10)
+# print(sum(my_list))
            
          
 # my_list = []
@@ -104,3 +104,17 @@ print(sum(my_list))
 #     x = int(x / 10)
 # else:
 #     print(my_list)
+
+
+# a = 82 // 3 ** 2 % 7
+# print(a)
+
+numbers = int(input())
+a = numbers % 10
+b = (numbers//10) % 10
+c = (numbers//100) % 10
+d = numbers//1000
+print(f'Цифра в позиции тысяч равна {d}')
+print(f'Цифра в позиции сотен равна {c}')
+print(f'Цифра в позиции десятков равна {b}')
+print(f'Цифра в позиции единиц равна {a}')
