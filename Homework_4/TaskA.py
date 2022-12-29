@@ -35,4 +35,5 @@ strin = ' '.join(my_list)
 pre_result = strin.replace('**', '^').replace('0', '').replace(' ^ ', '^').replace('-', '- ').replace(' * ', '*').replace('1*x', 'x').replace('  ', ' ').replace(' *x', ' x') + str(' = 0')
 result = pre_result.replace(' +  = 0', ' = 0').replace(' -  = 0', ' = 0').replace('x^1', 'x').replace('1 x', 'x')
 
-print(f'k={power_num} => {result}')
+with open('result_taskA.txt', 'a') as data:
+    data.writelines(f'k={power_num} => {result}\n')
