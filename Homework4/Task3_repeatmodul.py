@@ -18,8 +18,3 @@ def main():
 
 if __name__ == "__main__":     # точка входа
     main()
-
-
-my_list = [2, 1, 5, 3, 7, 2, 1, 3, 2, 9]
-my_list = del_repeat(my_list)
-print(my_list)
