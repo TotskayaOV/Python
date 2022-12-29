@@ -42,3 +42,5 @@ print(sum1)
 #         my_list.append(b)
 #         x = int(x / 10)
 # print(sum(my_list))
+
+# num = abs(float(input('')))

@@ -109,12 +109,25 @@
 # a = 82 // 3 ** 2 % 7
 # print(a)
 
-numbers = int(input())
-a = numbers % 10
-b = (numbers//10) % 10
-c = (numbers//100) % 10
-d = numbers//1000
-print(f'Цифра в позиции тысяч равна {d}')
-print(f'Цифра в позиции сотен равна {c}')
-print(f'Цифра в позиции десятков равна {b}')
-print(f'Цифра в позиции единиц равна {a}')
+# numbers = int(input())
+# a = numbers % 10
+# b = (numbers//10) % 10
+# c = (numbers//100) % 10
+# d = numbers//1000
+# print(f'Цифра в позиции тысяч равна {d}')
+# print(f'Цифра в позиции сотен равна {c}')
+# print(f'Цифра в позиции десятков равна {b}')
+# print(f'Цифра в позиции единиц равна {a}')
+
+# num1 = 54321
+# x = 10000
+# while num1 != 0:
+#     print(*str(num1), sep = ' ')
+#     num1 = int(num1%x)
+#     x = x/10
+
+n = 5
+for i in range(n, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=' ')
+    print()

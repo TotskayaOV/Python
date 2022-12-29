@@ -28,7 +28,7 @@ else:
     num3 = int(input('Введите номер второй строки (от 1 до 11): ')) - 1
 my_list = []
 for num4 in range(num1):
-    my_list.append(random.randint(-num1, num1))
+    my_list.append(random.randint(-num1, num1+1))
 multiplier1 = int(f1(num2))
 multiplier2 = int(f1(num3))
 result = my_list[multiplier1] * my_list[multiplier2]
