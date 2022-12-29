@@ -8,7 +8,7 @@ power_num = int(input('Введите значение натуральной с
 
 my_dict = {}        
 for i in range(0, power_num+1):
-    my_dict[i] = random.randint(-1, 2)
+    my_dict[i] = random.randint(-100, 100)
 items = list(my_dict.items())
 my_dict2 = {k: v for k, v in reversed(items)}
 
