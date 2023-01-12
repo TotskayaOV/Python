@@ -126,8 +126,13 @@
 #     num1 = int(num1%x)
 #     x = x/10
 
-n = 5
-for i in range(n, 0, -1):
-    for j in range(i, 0, -1):
-        print(j, end=' ')
-    print()
+# n = 5
+# for i in range(n, 0, -1):
+#     for j in range(i, 0, -1):
+#         print(j, end=' ')
+#     print()
+
+import array as arr
+numbers = arr.array('i',[10,20,30])
+print(type(numbers))
+print(type(numbers[0]))
